@@ -10,11 +10,11 @@ body {
 
 .blackish-effect-container {
     position: relative;
-    background-image: url('banner.jpg');
+    background-image: url('images/banner.jpg');
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     background-position: center;
     border-bottom: 10px solid rgb(35 35 35);
 }
@@ -25,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
 .nav {
@@ -135,8 +135,8 @@ body {
     width: 500px;
 }
 .image video {
-    margin-top: 75px;
-    width: 368px;
+    margin-top: 63px;
+    width: 300px;
     position: absolute;
     z-index: -1;
 }
@@ -180,8 +180,8 @@ body {
 }
 
 .questions {
-    padding: 50px;
-    width: 80vw;
+    padding: 50px 0 30px 0;
+    width: 60vw;
     margin: auto;
 }
 
@@ -218,11 +218,58 @@ body {
 .ansYes {
     display: block;
 }
+.questions form h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+.questions form {
+    padding-top: 45px;
+    text-align: center;
+}
+.p0 {
+    padding-bottom: 0;
+}
 
-@media screen and (max-width: 1300px){
+footer{
+    padding: 70px 0;
+    width: 75vw;
+    margin: auto;
+}
+.links1{
+    margin-bottom: 30px;
+}
+.links1 a, .link a,footer div, .search input{
+    color: rgba(255, 255, 255, 0.7);
+}
+.links2{
+    font-size: 16px;
+    padding: 0 191px 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+}
+.link a {
+    padding-bottom: 15px;
+}
+footer select{
+    padding: 6px 36px;
+    background-color: #0f0f0f;
+    border: 1px solid #6c767c;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+@media screen and (min-width: 1300px){
     .nav,.sec{
         width: 90vw;
     } 
+    .image video {
+        margin-top: 76px;
+        width: 366px;
+    }
 }
 @media screen and (max-width: 950px){
     .info {
@@ -253,14 +300,21 @@ body {
     .heading h1,.info h1,.questions h1 {
         font-size: 32px;
     }
-    .heading p {
+    .heading p,.info p,.info form h3 {
         font-size: 16px;
+    }
+    .search {
+        padding-bottom: 0;
     }
     .movie{
         margin-top: 250px;
     }
     .name img,#gif {
         width: 45px;
+    }
+    .links2 {
+        display: grid;
+        grid-template-columns: repeat(2,40vw);
     }
 }
 
@@ -271,6 +325,7 @@ body {
         padding: 10px 25px;
     }
 }
+
 @media screen and (max-width: 500px){
     .image img {
         width: 250px;
@@ -288,15 +343,22 @@ body {
         margin-top: 115px;
     }
     .questions {
-        width: 55vw;
-    }
-    .qa {
-        font-size: 14px;
+        width: 85vw;
     }
     .qa span {
         padding-right: 20px;
         margin: 0;
-    }
+    } 
 }
 
-
+@media screen and (max-width: 1300px){
+    footer {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 250px){
+    .nav{
+        flex-direction: column;
+        justify-content: start;
+    }
+}

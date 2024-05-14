@@ -1,4 +1,4 @@
-let questions = document.querySelectorAll('.ques')
+let questions = document.querySelectorAll('.ques');
 let icon1 = `<span class="material-symbols-outlined close">close</span>`
 let icon2 = `<span class="material-symbols-outlined add">add</span>`
 Array.from(questions).forEach((element)=>{
