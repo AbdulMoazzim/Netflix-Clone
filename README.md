@@ -17,7 +17,7 @@ This project is a responsive clone of the Netflix home page, built using HTML, C
 - Footer: Informational footer similar to Netflix’s original design.
 
 
-## Tech Stack
+## Technologies
 
 **Client:** HTML5, CSS3, JS
 
