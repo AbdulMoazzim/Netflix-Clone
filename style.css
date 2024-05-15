@@ -356,10 +356,7 @@ footer select{
 }
 
 @media screen and (max-width: 1300px){
-    footer {
-        width: 90vw;
-    }
-    .nav{
+    footer,.nav ,.sec{
         width: 90vw;
     }
     .questions {
