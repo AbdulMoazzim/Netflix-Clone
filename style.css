@@ -232,7 +232,7 @@ body {
 
 footer{
     padding: 70px 0;
-    width: 75vw;
+    width: 60vw;
     margin: auto;
 }
 .links1{
@@ -263,20 +263,21 @@ footer select{
     margin-bottom: 15px;
 }
 @media screen and (min-width: 1300px){
-    .nav,.sec{
-        width: 90vw;
-    } 
     .image video {
         margin-top: 76px;
         width: 366px;
     }
 }
 @media screen and (max-width: 950px){
+    .nav img{
+        width: 105px;
+    }
     .info {
         width: 80vw;
         padding-top: 80px;
     }
     .sec{
+        width: 80vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -316,6 +317,9 @@ footer select{
         display: grid;
         grid-template-columns: repeat(2,40vw);
     }
+    .qa{
+        font-size: 18px;
+    }
 }
 
 
@@ -354,6 +358,13 @@ footer select{
 @media screen and (max-width: 1300px){
     footer {
         width: 90vw;
+    }
+    .nav{
+        width: 90vw;
+    }
+    .questions {
+        width: 90vw;
+        padding: 50px 0;
     }
 }
 @media screen and (max-width: 250px){
